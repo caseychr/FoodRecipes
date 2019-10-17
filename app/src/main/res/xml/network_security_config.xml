@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Network changes for API 28 require this to exist sometimes. This needs to be referenced in the manifest as well.
+     You can also just go into the Manifest
+     and put <domain-config cleartextTrafficPermitted="true"> in the application level. -->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">static.food2fork.com</domain>
+    </domain-config>
+</network-security-config>
